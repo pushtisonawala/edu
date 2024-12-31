@@ -1,6 +1,6 @@
 // src/components/footer.tsx
 import React from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
