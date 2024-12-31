@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav__link {
+    @apply relative text-xl w-fit block after:block after:content-[''] font-semibold after:absolute after:h-[3px] after:bg-yellow-400 text-white after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right;
+  }
+
+  .nav__link:hover {
+    @apply text-yellow-400; /* Change text color on hover */
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .animation-bounce {
+    animation: bounce 2s infinite;
+  }
+}
